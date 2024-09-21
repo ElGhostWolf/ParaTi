@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to bottom right, #ffccff, #ffff99);
+    background: linear-gradient(to bottom right, #f0f0f0, #e0e0e0); /* Degradado suave */
 }
 
 .gallery-container {
@@ -14,19 +14,36 @@ body {
     margin: 0 auto;
 }
 
-.image-container img {
-    width: 75%;
+.image-container {
+    position: relative; /* Para posicionar el mensaje */
 }
 
-.message {
+.image-container img {
+    width: 75%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+.message-container {
     position: absolute;
     bottom: 10px;
     left: 0;
     right: 0;
     background: rgba(255, 255, 255, 0.8);
-    color: #333;
     padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra debajo del mensaje */
+    text-align: center;
+}
+
+.message {
     font-size: 28px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Lobster', cursive; /* Puedes cambiar a otra fuente */
+    color: #333;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
