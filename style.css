@@ -13,7 +13,7 @@
     height: auto;
     margin: 10px;
     border: 1px solid #ccc;
-    display: none;
+    display: none; /* Todas las imágenes están ocultas por defecto */
 }
 
 .image-description {
