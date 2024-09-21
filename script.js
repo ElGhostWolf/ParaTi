@@ -1,24 +1,24 @@
-const images = ['images/imagen1.jpg', 'images/imagen2.jpg', 'images/imagen3.jpg'];
+const images = ['images/1.jpg', 'images/2.jpg', 'images/3.jpg'];
 const dots = document.querySelectorAll('.dot');
-const imgElement = document.querySelector('.image-container img');
+const img = document.querySelector('img');
+const nextButton = document.getElementById('nextButton');
+const message = document.querySelector('.message');
 
-let currentImageIndex = 0;
+let currentIndex = 0;
 
-function showImage(index) {
-    imgElement.src = images[index];
-    imgElement.classList.remove('active');
-    void imgElement.offsetWidth; // Trigger reflow for transition
-    imgElement.classList.add('active');
+function showImage(n) {
+  currentIndex = (currentIndex + n + images.length) % images.length;
+  img.src = images[currentIndex];
 
-    // Actualizar los puntos
-    dots.forEach((dot, i) => {
-        dot.classList.remove('active');
-    });
-    dots[index].classList.add('active');
+  dots.forEach((dot, index) => {
+    dot.classList.remove('active');
+  });
+  dots[currentIndex].classList.add('active');
 }
 
-dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-        showImage(index);
-    });
+showImage(0); // Mostrar la primera imagen al cargar la página
+
+nextButton.addEventListener('click', () => {
+  showImage(1);
+  message.style.display = 'none'; // Ocultar el mensaje al hacer clic en el botón
 });
