@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to right, #f3e5ab, #ffcccb); /* Fondo colorido */
+    background-color: #f9f9f9; /* Fondo simple y claro */
     font-family: 'Cursive', 'Arial', sans-serif;
     display: flex;
     justify-content: center;
