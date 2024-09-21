@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Galería de Imágenes</title>
+    <title>Galería de imágenes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <div class="gallery-container">
-            <figure class="image-container">
-                <img class="image active" src="images/imagen1.jpg" alt="Te amo mucho, mi amor. Aunque no pude darte los girasoles de verdad, aquí tienes unos virtuales llenos de todo mi cariño.">
-                <figcaption>Mi primera imagen</figcaption>
-            </figure>
-            <figure class="image-container">
-                <img class="image" src="images/imagen2.jpg" alt="Otro momento especial.">
-                <figcaption>Mi segunda imagen</figcaption>
-            </figure>
-            </div>
-        <div class="navigation">
-            <button id="prevButton">Anterior</button>
-            <button id="nextButton">Siguiente</button>
+    <div class="container">
+        <h1 id="welcome">Bienvenido, Rosi!</h1>
+        <div class="image-container">
+            <img src="images/imagen1.jpg" alt="Imagen 1">
+            <img src="images/imagen2.jpg" alt="Imagen 2">
+            <img src="images/imagen3.jpg" alt="Imagen 3">
         </div>
-    </main>
+        <p class="image-description"></p>
+        <div class="buttons">
+            <button id="prev">Anterior</button>
+            <button id="next">Siguiente</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
