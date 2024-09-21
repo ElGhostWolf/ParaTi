@@ -37,6 +37,15 @@ body {
     height: 150px;
 }
 
+.active {
+    /* Estilos para la imagen activa */
+    border: 2px solid var(--primary-color);
+}
+
+.hidden {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .image {
         width: 100%;
