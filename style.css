@@ -1,44 +1,101 @@
-/* Centrado del contenedor principal */
-.container {
+/* Estilo de la página */
+body {
+    background-color: #fff0f5;
+    font-family: 'Cursive', 'Arial', sans-serif;
+    color: #8b4513;
     text-align: center;
-    margin-top: 50px;
+    margin: 0;
+    padding: 0;
 }
 
-/* Contenedor de la imagen */
+/* Contenedor central */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffe4e1;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Título principal romántico */
+h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #d2691e;
+    font-size: 2.5em;
+}
+
+/* Texto del mensaje inicial */
+#mensaje-inicial {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+/* Imagen */
 .image-container {
     display: none;
     justify-content: center;
 }
 
-/* Imagen principal, tamaño ajustado */
 .image {
-    width: 300px;
+    width: 250px;
     height: auto;
     margin: 20px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    border: 2px solid #d2691e;
+    border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos del texto de descripción */
+/* Texto de descripción */
 .image-description {
     display: none;
-    font-size: 18px;
+    font-size: 1.2em;
+    color: #8b0000;
     margin-top: 10px;
-    color: #333;
 }
 
-/* Botón para mostrar la imagen */
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
+/* Botón estilo sobre */
+.sobre-button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    background-color: #f08080;
     color: white;
-    border: none;
-    border-radius: 5px;
+    border: 2px solid #f08080;
+    border-radius: 10px;
+    position: relative;
     cursor: pointer;
+    font-family: 'Cursive', sans-serif;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #45a049;
+/* Efecto hover para el botón */
+.sobre-button:hover {
+    background-color: #ff6f61;
+    border-color: #ff6f61;
+}
+
+/* Forma de sobre en el botón */
+.sobre-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    transform: rotate(-45deg);
+    border-radius: 10px;
+}
+
+.sobre-button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    transform: rotate(45deg);
+    border-radius: 10px;
 }
