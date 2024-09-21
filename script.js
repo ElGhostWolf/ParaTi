@@ -1,4 +1,4 @@
-const images = ['images/1.jpg', 'images/2.jpg', 'images/3.jpg'];
+const images = ['images/imagen1.jpg', 'images/imagen2.jpg', 'images/imagen3.jpg'];
 const dots = document.querySelectorAll('.dot');
 const img = document.querySelector('img');
 const nextButton = document.getElementById('nextButton');
