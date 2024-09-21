@@ -9,11 +9,11 @@
 }
 
 .image {
-    display: none;
     width: 200px;
     height: auto;
     margin: 10px;
     border: 1px solid #ccc;
+    display: none;
 }
 
 .image-description {
