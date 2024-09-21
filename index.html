@@ -10,14 +10,22 @@
     <div class="container">
         <p id="mensaje-inicial">Aunque no pude darte los girasoles de verdad, aquí tienes unos virtuales llenos de todo mi cariño.</p>
         <button id="mostrar-imagenes">Presiona aquí</button>
+        
+        <!-- Contenedor de imágenes -->
         <div class="image-container">
             <img src="imagen1.jpg" alt="Primer girasol" class="image">
             <img src="imagen2.jpg" alt="Segundo girasol" class="image">
             <img src="imagen3.jpg" alt="Tercer girasol" class="image">
         </div>
-        <p class="image-description" id="descripcion">Te amo mucho, mi amor</p>
-        <button id="siguiente-imagen" style="display:none;">Siguiente imagen</button>
+
+        <!-- Descripción de las imágenes -->
+        <p class="image-description" id="descripcion"></p>
+        
+        <!-- Botones de navegación -->
+        <button id="anterior-imagen" style="display:none;">Anterior</button>
+        <button id="siguiente-imagen" style="display:none;">Siguiente</button>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
