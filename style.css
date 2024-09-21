@@ -2,15 +2,20 @@
     text-align: center;
 }
 
+.image-container {
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    max-width: 80%; /* Ajusta el ancho máximo del contenedor */
+}
+
 .image-container img {
-    width: 50%; /* Ajusta el ancho al 50% */
-    height: auto; /* Permite que la altura se ajuste automáticamente */
-    display: none; /* Inicialmente, todas las imágenes están ocultas */
+    width: 100%; /* Hace que las imágenes ocupen todo el ancho del contenedor */
+    height: auto;
+    display: none;
 }
 
 .image-container img.active {
     display: block;
-    transition: opacity 0.5s ease-in-out; /* Agrega una transición suave */
+    transition: opacity 0.5s ease-in-out;
 }
 
 .image-description {
@@ -19,7 +24,6 @@
 }
 
 .buttons button {
-    /* Estilos para los botones */
     background-color: #4CAF50;
     color: white;
     padding: 15px 32px;
