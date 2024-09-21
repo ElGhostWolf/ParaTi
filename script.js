@@ -6,6 +6,6 @@ const descripcion = document.getElementById('descripcion');
 botonMostrar.addEventListener('click', () => {
     mensajeInicial.style.display = 'none';
     botonMostrar.style.display = 'none';
-    imageContainer.style.display = 'flex';
-    descripcion.style.display = 'block';
+    imageContainer.style.display = 'block'; // Muestra la imagen
+    descripcion.style.display = 'block'; // Muestra la descripción
 });
