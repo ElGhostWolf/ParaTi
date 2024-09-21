@@ -7,14 +7,22 @@ const botonAnterior = document.getElementById('anterior');
 const botonSiguiente = document.getElementById('siguiente');
 let currentImageIndex = 0;
 
+// Ocultar todas las imágenes excepto la primera
+function ocultarTodasLasImagenes() {
+    images.forEach(image => image.style.display = 'none');
+}
+
 // Mostrar las imágenes al presionar "Presiona aquí"
 botonMostrar.addEventListener('click', () => {
     mensajeInicial.style.display = 'none';
+    botonMostrar.style.display = 'none';
     imageContainer.style.display = 'flex';
     descripcion.style.display = 'block';
     botonAnterior.style.display = 'inline-block';
     botonSiguiente.style.display = 'inline-block';
-    images[currentImageIndex].style.display = 'block'; // Mostrar la primera imagen
+
+    ocultarTodasLasImagenes(); // Asegurarse de que todas las imágenes estén ocultas
+    images[currentImageIndex].style.display = 'block'; // Mostrar solo la primera imagen
 });
 
 // Función para mostrar la imagen anterior
@@ -30,3 +38,4 @@ botonSiguiente.addEventListener('click', () => {
     currentImageIndex = (currentImageIndex + 1) % images.length; // Pasar a la siguiente imagen
     images[currentImageIndex].style.display = 'block'; // Mostrar la nueva imagen
 });
+
