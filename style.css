@@ -1,5 +1,5 @@
 body {
-    background-color: #f9f9f9; /* Fondo simple y claro */
+    background-color: #f9f9f9;
     font-family: 'Cursive', 'Arial', sans-serif;
     display: flex;
     justify-content: center;
@@ -22,12 +22,8 @@ h1 {
     font-size: 2.5em;
 }
 
-#mensaje-inicial {
-    font-size: 1.3em;
-}
-
 .hidden {
-    display: none; /* Ocultar elementos inicialmente */
+    display: none;
 }
 
 .image-container {
@@ -35,13 +31,13 @@ h1 {
 }
 
 .image {
-    width: 200px; /* Tamaño reducido de la imagen */
+    width: 200px;
     height: auto;
     margin: 20px auto;
 }
 
 .image-description {
-    font-size: 1.2em;
+    text-align: center;
     margin-top: 10px;
 }
 
