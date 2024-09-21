@@ -1,6 +1,6 @@
 /* Fondo general */
 body {
-    background-image: url('images/fondo_romantico.jpg'); /* Cambia el fondo por una imagen */
+    background-image: url('images/fondo_romantico.jpg'); /* Cambia esto por la ruta de tu imagen de fondo */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -21,7 +21,6 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
     padding: 20px;
-    margin: 20px;
 }
 
 /* Título principal romántico */
@@ -70,7 +69,6 @@ h1 {
     color: white;
     border: 2px solid #f08080;
     border-radius: 10px;
-    position: relative;
     cursor: pointer;
     font-family: 'Cursive', sans-serif;
     transition: background-color 0.3s ease;
@@ -82,37 +80,6 @@ h1 {
     background-color: #ff6f61;
     border-color: #ff6f61;
 }
-
-/* Forma de sobre en el botón */
-.sobre-button:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 2px solid white;
-    transform: rotate(-45deg);
-    border-radius: 10px;
-}
-
-.sobre-button:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    border: 2px solid white;
-    transform: rotate(45deg);
-    border-radius: 10px;
-}
-
-/* Asegura que los textos queden centrados */
-p, h1 {
-    text-align: center;
-}
-
 
 /* Asegura que los textos queden centrados */
 p, h1 {
