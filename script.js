@@ -1,24 +1,28 @@
-const images = ['images/imagen1.jpg', 'imagen2.jpg', 'imagen3.jpg'];
-const dots = document.querySelectorAll('.dot');
-const img = document.querySelector('img');
+const images = document.querySelectorAll('.image');
+const prevButton = document.getElementById('prevButton');
 const nextButton = document.getElementById('nextButton');
-const message = document.querySelector('.message');
+let currentImageIndex = 0;
 
-let currentIndex = 0;
-
-function showImage(n) {
-  currentIndex = (currentIndex + n + images.length) % images.length;
-  img.src = images[currentIndex];
-
-  dots.forEach((dot, index) => {
-    dot.classList.remove('active');
+function showImage(index) {
+  images.forEach((image, i) => {
+    image.classList.remove('active');
+    if (i === index) {
+      image.classList.add('active');
+    } else {
+      image.classList.add('hidden');
+    }
   });
-  dots[currentIndex].classList.add('active');
 }
 
-showImage(0); // Mostrar la primera imagen al cargar la página
-
 nextButton.addEventListener('click', () => {
-  showImage(1);
-  message.style.display = 'none'; // Ocultar el mensaje al hacer clic en el botón
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+  showImage(currentImageIndex);
 });
+
+prevButton.addEventListener('click', () => {
+  currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+  showImage(currentImageIndex);
+});
+
+// Mostrar la primera imagen al cargar la página
+showImage(currentImageIndex);
