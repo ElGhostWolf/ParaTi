@@ -40,7 +40,7 @@ h1 {
 
 /* Imagen */
 .image-container {
-    display: none;
+    display: none; /* Asegura que la imagen esté oculta al inicio */
     justify-content: center;
 }
 
@@ -55,7 +55,7 @@ h1 {
 
 /* Texto de descripción */
 .image-description {
-    display: none;
+    display: none; /* Oculta la descripción al inicio */
     font-size: 1.2em;
     color: #8b0000;
     margin-top: 10px;
@@ -107,6 +107,12 @@ h1 {
     transform: rotate(45deg);
     border-radius: 10px;
 }
+
+/* Asegura que los textos queden centrados */
+p, h1 {
+    text-align: center;
+}
+
 
 /* Asegura que los textos queden centrados */
 p, h1 {
