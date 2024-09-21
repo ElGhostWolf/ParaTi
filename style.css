@@ -1,21 +1,27 @@
-/* Estilo de la página */
+/* Fondo general */
 body {
-    background-color: #fff0f5;
+    background-image: url('images/fondo_romantico.jpg'); /* Cambia el fondo por una imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     font-family: 'Cursive', 'Arial', sans-serif;
     color: #8b4513;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
 }
 
 /* Contenedor central */
 .container {
     max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffe4e1;
+    background-color: rgba(255, 228, 225, 0.9); /* Fondo con transparencia */
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
 }
 
 /* Título principal romántico */
@@ -23,6 +29,7 @@ h1 {
     font-family: 'Dancing Script', cursive;
     color: #d2691e;
     font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 /* Texto del mensaje inicial */
@@ -67,6 +74,7 @@ h1 {
     cursor: pointer;
     font-family: 'Cursive', sans-serif;
     transition: background-color 0.3s ease;
+    margin-top: 20px;
 }
 
 /* Efecto hover para el botón */
@@ -98,4 +106,9 @@ h1 {
     border: 2px solid white;
     transform: rotate(45deg);
     border-radius: 10px;
+}
+
+/* Asegura que los textos queden centrados */
+p, h1 {
+    text-align: center;
 }
