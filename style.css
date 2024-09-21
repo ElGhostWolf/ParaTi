@@ -1,22 +1,19 @@
 body {
-    background-image: url('images/fondo_romantico.jpg'); /* Cambia esto por la ruta de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(to right, #f3e5ab, #ffcccb); /* Fondo colorido */
     font-family: 'Cursive', 'Arial', sans-serif;
-    color: #8b4513;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    text-align: center;
 }
 
 .container {
-    max-width: 600px;
-    background-color: rgba(255, 228, 225, 0.9);
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     padding: 20px;
 }
 
@@ -29,19 +26,23 @@ h1 {
     font-size: 1.3em;
 }
 
+.hidden {
+    display: none; /* Ocultar elementos inicialmente */
+}
+
 .image-container {
-    display: none; /* Oculta la imagen al inicio */
+    margin-top: 20px;
 }
 
 .image {
-    width: 250px;
+    width: 200px; /* Tamaño reducido de la imagen */
     height: auto;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 .image-description {
-    display: none; /* Oculta la descripción al inicio */
     font-size: 1.2em;
+    margin-top: 10px;
 }
 
 .sobre-button {
