@@ -5,7 +5,7 @@ let currentImageIndex = 0;
 
 function showImage(index) {
   images.forEach((image, i) => {
-    image.classList.remove('active');
+    image.classList.remove('active', 'hidden');
     if (i === index) {
       image.classList.add('active');
     } else {
