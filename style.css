@@ -1,23 +1,44 @@
+/* Centrado del contenedor principal */
 .container {
     text-align: center;
+    margin-top: 50px;
 }
 
+/* Contenedor de la imagen */
 .image-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: none;
     justify-content: center;
 }
 
+/* Imagen principal, tamaño ajustado */
 .image {
-    width: 200px;
+    width: 300px;
     height: auto;
-    margin: 10px;
-    border: 1px solid #ccc;
-    display: none; /* Todas las imágenes están ocultas por defecto */
+    margin: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos del texto de descripción */
 .image-description {
     display: none;
     font-size: 18px;
     margin-top: 10px;
+    color: #333;
+}
+
+/* Botón para mostrar la imagen */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
 }
