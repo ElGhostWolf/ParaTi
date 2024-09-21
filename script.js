@@ -12,8 +12,9 @@ botonMostrar.addEventListener('click', () => {
     mensajeInicial.style.display = 'none';
     imageContainer.style.display = 'flex';
     descripcion.style.display = 'block';
-    // Mostrar la primera imagen por defecto
-    images[currentImageIndex].style.display = 'block';
+    botonAnterior.style.display = 'inline-block';
+    botonSiguiente.style.display = 'inline-block';
+    images[currentImageIndex].style.display = 'block'; // Mostrar la primera imagen
 });
 
 // Función para mostrar la imagen anterior
@@ -29,4 +30,3 @@ botonSiguiente.addEventListener('click', () => {
     currentImageIndex = (currentImageIndex + 1) % images.length; // Pasar a la siguiente imagen
     images[currentImageIndex].style.display = 'block'; // Mostrar la nueva imagen
 });
-
