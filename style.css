@@ -1,4 +1,3 @@
-/* Fondo general */
 body {
     background-image: url('images/fondo_romantico.jpg'); /* Cambia esto por la ruta de tu imagen de fondo */
     background-size: cover;
@@ -13,17 +12,15 @@ body {
     margin: 0;
 }
 
-/* Contenedor central */
 .container {
     max-width: 600px;
-    background-color: rgba(255, 228, 225, 0.9); /* Fondo con transparencia */
+    background-color: rgba(255, 228, 225, 0.9);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
     padding: 20px;
 }
 
-/* Título principal romántico */
 h1 {
     font-family: 'Dancing Script', cursive;
     color: #d2691e;
@@ -31,13 +28,11 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Texto del mensaje inicial */
 #mensaje-inicial {
     font-size: 1.3em;
     margin-bottom: 20px;
 }
 
-/* Imagen */
 .image-container {
     display: none; /* Asegura que la imagen esté oculta al inicio */
     justify-content: center;
@@ -52,7 +47,6 @@ h1 {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Texto de descripción */
 .image-description {
     display: none; /* Oculta la descripción al inicio */
     font-size: 1.2em;
@@ -60,7 +54,6 @@ h1 {
     margin-top: 10px;
 }
 
-/* Botón estilo sobre */
 .sobre-button {
     display: inline-block;
     padding: 15px 25px;
@@ -75,13 +68,7 @@ h1 {
     margin-top: 20px;
 }
 
-/* Efecto hover para el botón */
 .sobre-button:hover {
     background-color: #ff6f61;
     border-color: #ff6f61;
-}
-
-/* Asegura que los textos queden centrados */
-p, h1 {
-    text-align: center;
 }
