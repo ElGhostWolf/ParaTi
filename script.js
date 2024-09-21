@@ -1,36 +1,11 @@
-const images = document.querySelectorAll('.image-container img');
-const prevButton = document.getElementById('prev');
-const nextButton = document.getElementById('next');
-const description = document.querySelector('.image-description');
-let currentImageIndex = 0;
+// Ejemplo de un efecto de desvanecimiento al pasar el mouse
+const images = document.querySelectorAll('img');
 
-// Función para mostrar la imagen en el índice especificado
-function showImage(index) {
-    images.forEach((image, i) => {
-        image.classList.remove('active');
-        if (i === index) {
-            image.classList.add('active');
-        }
-    });
-    description.textContent = images[index].alt;
-}
-
-// Función para mostrar la siguiente imagen
-function showNextImage() {
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-    showImage(currentImageIndex);
-}
-
-// Función para mostrar la imagen anterior
-function showPrevImage() {
-    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-    showImage(currentImageIndex);
-}
-
-// Mostrar la primera imagen al cargar la página
-images[0].classList.add('active');
-description.textContent = images[0].alt;
-
-// Eventos de los botones
-prevButton.addEventListener('click', showPrevImage);
-nextButton.addEventListener('click', showNextImage);
+images.forEach(image => {
+  image.addEventListener('mouseover', () => {
+    image.style.opacity = '0.7';
+  });
+  image.addEventListener('mouseout', () => {
+    image.style.opacity = '1';
+  });
+});
