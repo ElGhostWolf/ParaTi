@@ -2,7 +2,6 @@ body {
     background-image: url('images/fondo_romantico.jpg'); /* Cambia esto por la ruta de tu imagen de fondo */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     font-family: 'Cursive', 'Arial', sans-serif;
     color: #8b4513;
     display: flex;
@@ -22,53 +21,40 @@ body {
 }
 
 h1 {
-    font-family: 'Dancing Script', cursive;
     color: #d2691e;
     font-size: 2.5em;
-    margin-bottom: 20px;
 }
 
 #mensaje-inicial {
     font-size: 1.3em;
-    margin-bottom: 20px;
 }
 
 .image-container {
-    display: none; /* Asegura que la imagen esté oculta al inicio */
-    justify-content: center;
+    display: none; /* Oculta la imagen al inicio */
 }
 
 .image {
     width: 250px;
     height: auto;
     margin: 20px;
-    border: 2px solid #d2691e;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .image-description {
     display: none; /* Oculta la descripción al inicio */
     font-size: 1.2em;
-    color: #8b0000;
-    margin-top: 10px;
 }
 
 .sobre-button {
-    display: inline-block;
     padding: 15px 25px;
-    font-size: 1.2em;
     background-color: #f08080;
     color: white;
-    border: 2px solid #f08080;
+    border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-family: 'Cursive', sans-serif;
-    transition: background-color 0.3s ease;
     margin-top: 20px;
+    transition: background-color 0.3s ease;
 }
 
 .sobre-button:hover {
     background-color: #ff6f61;
-    border-color: #ff6f61;
 }
